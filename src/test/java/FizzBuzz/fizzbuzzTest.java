@@ -20,5 +20,11 @@ public class fizzbuzzTest {
         assertThat(fizzbuzz.de(5)).isEqualTo("Buzz");
     }
 
+    @Test
+    void fizzBuzz_de_15_devrait_retourner_FizzBuzz() {
+        assertThat(fizzbuzz.de(15)).isEqualTo("FizzBuzz");
+    }
+
+
 }
 

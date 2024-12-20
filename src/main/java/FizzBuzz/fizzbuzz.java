@@ -4,15 +4,21 @@ public class fizzbuzz {
 
 
 
+
     public static String de(int nbr) {
-        if (nbr == 3) {
+        if (nbr % 3 == 0 && nbr % 5 == 0) {
+            return "FizzBuzz";
+        }
+        if (nbr % 3 == 0) {
             return "Fizz";
         }
-        if (nbr == 5) {
+        if (nbr % 5 == 0) {
             return "Buzz";
         }
-        return "1";
+        return String.valueOf(nbr);
     }
+
+
 
 
 }
